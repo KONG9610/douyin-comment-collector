@@ -1,0 +1,53 @@
+{
+  "name": "douyin-local-assistant",
+  "version": "0.3.0",
+  "private": true,
+  "description": "本地抖音视频与评论归档工具",
+  "main": "src/main.cjs",
+  "dependencies": {
+    "playwright-core": "^1.58.0",
+    "exceljs": "^4.4.0"
+  },
+  "productName": "抖音评论采集助手",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis --x64"
+  },
+  "devDependencies": {
+    "electron": "40.10.6",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "local.douyin.comment.collector",
+    "productName": "抖音评论采集助手",
+    "asar": true,
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "package.json",
+      "!**/*.map"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "signExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "抖音评论采集助手",
+      "deleteAppDataOnUninstall": false
+    },
+    "artifactName": "DouyinCommentCollector-${version}-Setup.${ext}"
+  }
+}

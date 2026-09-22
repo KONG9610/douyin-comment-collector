@@ -1,0 +1,3 @@
+const {contextBridge,ipcRenderer}=require('electron');
+const actions=['consent-status','consent-accept','state','parse-batch','preview','enqueue','queue-start','queue-pause','remove-queued','retry','pause','resume','stop','login','login-status','logout','profile-start','profile-stop','choose-folder','settings','space','comments','replies','image','preview-image','download-images','open-result','export','diagnostics','temp-list','temp-clean'];
+contextBridge.exposeInMainWorld('assistant',{call:(name,...args)=>{if(!actions.includes(name))throw new Error('未知操作');return ipcRenderer.invoke(name,...args);},onUpdate:callback=>ipcRenderer.on('state-update',(_,s)=>callback(s)),onClosing:callback=>ipcRenderer.on('closing',callback)});

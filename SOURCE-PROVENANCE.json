@@ -1,0 +1,79 @@
+{
+  "version": "0.3.0",
+  "recoveredAt": "2026-09-22T15:16:58.935Z",
+  "source": "retained dist/win-unpacked/resources/app.asar",
+  "archiveSha256": "d351af9273d46de670145623abbce745f9c79ea13b0c60c9d092ac0fab840f1c",
+  "originalPackagedManifest": {
+    "name": "douyin-local-assistant",
+    "version": "0.3.0",
+    "private": true,
+    "description": "本地抖音视频与评论归档工具",
+    "main": "src/main.cjs",
+    "dependencies": {
+      "playwright-core": "^1.58.0",
+      "exceljs": "^4.4.0"
+    },
+    "productName": "抖音评论采集助手"
+  },
+  "unchangedSourceFiles": [
+    {
+      "file": "src/assets.cjs",
+      "sha256": "30de8860c591d297540522e83e69a24ba38895149d103f194e86a2c3c0d7ee07"
+    },
+    {
+      "file": "src/collector.cjs",
+      "sha256": "25fe70d926185e7f34a0c18043bebca268f79b1b7b50b719909e1d8e571a8ed8"
+    },
+    {
+      "file": "src/consent.cjs",
+      "sha256": "63af3676872ce048a51a5ed27b3869ee08f85b7943e538d4df012d390db9af9f"
+    },
+    {
+      "file": "src/core.cjs",
+      "sha256": "c0adf80e27b5701d40b949013f27a92b1fdf3e31320f8ddd22882a780d477864"
+    },
+    {
+      "file": "src/disclaimer.txt",
+      "sha256": "882f81ddb05fb1c5a7b513517d6f407c0692839557ffb86b1410a2cd96649e14"
+    },
+    {
+      "file": "src/main.cjs",
+      "sha256": "ff85da0ee70a7e9146aefe66f069114f4b7522c5f76652297e74bf83a9e0bcbf"
+    },
+    {
+      "file": "src/model.cjs",
+      "sha256": "c7b0054ea02154d723108ceed70c9ea9a05e2386bfea4a2bac50de4ab326206d"
+    },
+    {
+      "file": "src/preload.cjs",
+      "sha256": "842964ae4554c45b6a9beb1cc9bd57da953a929e04183cfc9d793a10f9323fbb"
+    },
+    {
+      "file": "src/sources.cjs",
+      "sha256": "9f2ce1a012164df8c858c1ef20c1e0a7c913554323f9052b4cdf676bafbb3854"
+    },
+    {
+      "file": "src/ui/app.js",
+      "sha256": "aa580d7ff02ab56dc2a86a526882bb2aa9afca5f94c5c2ab678f61a853b773e6"
+    },
+    {
+      "file": "src/ui/index.html",
+      "sha256": "7721b52990b76c52b7c378b0141c9cf84fbbc8fc2562e30d1641c5a787f2b0de"
+    },
+    {
+      "file": "src/ui/style.css",
+      "sha256": "f15a790817dece9d88de3ede58b779bc2d8597924d9baaf2c6552e86214ecd82"
+    }
+  ],
+  "reconstructedFiles": [
+    "package.json development scripts, devDependencies and build settings",
+    "README.md",
+    ".gitignore"
+  ],
+  "notRecovered": [
+    "original lockfile",
+    "original test suite",
+    "Git history"
+  ],
+  "license": "not_selected"
+}
